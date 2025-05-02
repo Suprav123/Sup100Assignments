@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .login-box {
+      max-width: 300px;
+      margin: auto;
+      border: 1px solid #ccc;
+      padding: 20px;
+      border-radius: 8px;
+    }
+    </style>
+</head>
+<body>
+    <h1>Task 5</h1>
+    <style>
+        * { box-sizing: border-box; margin:0; padding:0; }
+        body {
+          font-family: Arial, sans-serif;
+          background: #f1f1f1;
+          display: flex;
+          height: 100vh;
+          align-items: center;
+          justify-content: center;
+        }
+        .login-box {
+          background: #fff;
+          padding: 30px;
+          width: 320px;
+          border-radius: 8px;
+          box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+          text-align: center;
+        }
+        .login-box .avatar {
+          width: 100px;
+          height: 100px;
+          border-radius: 50%;
+          object-fit: cover;
+          margin-bottom: 20px;
+        }
+        .login-box label {
+          display: block;
+          text-align: left;
+          margin: 10px 0 4px;
+          font-weight: bold;
+        }
+        .login-box input {
+          width: 100%;
+          padding: 8px;
+          border: 1px solid #ccc;
+          border-radius: 4px;
+        }
+        .login-box .btn {
+          width: 100%;
+          padding: 10px;
+          margin-top: 20px;
+          border: none;
+          border-radius: 4px;
+          font-size: 16px;
+          cursor: pointer;
+        }
+        .login-btn { background: #28a745; color: #fff; }
+        .cancel-btn { background: #dc3545; color: #fff; }
+        .options {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          margin-top: 12px;
+          font-size: 14px;
+        }
+        .options a { text-decoration: none; color: #007bff; }
+      </style>
+    </head>
+    <body>
+    
+      <div class="login-box">
+        <img src="avatar.png" alt="User avatar" class="avatar">
+    
+        <form>
+          <label for="user">Username</label>
+          <input id="user" type="text" placeholder="Enter Username">
+    
+          <label for="pass">Password</label>
+          <input id="pass" type="password" placeholder="Enter Password">
+    
+          <button type="submit" class="btn login-btn">Login</button>
+    
+          <div class="options">
+            <label><input type="checkbox"> Remember me</label>
+            <a href="#">Forgot password?</a>
+          </div>
+    
+          <button type="button" class="btn cancel-btn">Cancel</button>
+        </form>
+      </div>
+    
+    </body>
+    </html>
